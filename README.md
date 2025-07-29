@@ -52,14 +52,16 @@ Top view showing the antenna configuration and application points numbering
 1) 🎛️ **Remote control of the VNA**   
 The code allows the user to remotely control the VNA, which must be connected to the same LAN as the laptop.
 For istance, I use a static IP configuration for both devices, which are directly connected to a router using CAT5e ethernet cable.
-2) 🧩 **Required drivers for LAN communication** 
+
+3) 🧩 **Required drivers for LAN communication**   
 To enable communication between the laptop and the VNA, you have to install specific drivers from the following link: `https://www.tek.com/en/support/software/driver/tekvisa-connectivity-software-v411`.
 After installing the TekVISA software, a set of tool will be available, including "OpenChoice Instrument Manager", which can be used to detect and verify the connection with the VNA. If the connection between the router, the laptop and the VNA is done correctly, the VNA should appear in the instrument manager.
 
-3) 📡 **Manual switching of antennas**
+4) 📡 **Manual switching of antennas**   
 Unfortunately, I didn't have access to a switching matrix to automate the antenna selection, and since the Rohde & Schwarz ZNB4 VNA has only 2 ports, I had to manually switch antennas in order to acquire all the S-parameters between the different antenna pairs (e.g. S11, S12, S13, ... ,S88). 
 So this leads the user to manually change the configurations parameters in the code before each new measurement.
-4) 🗂️ **Saving mechanism and folter hierarchy** 
+
+6) 🗂️ **Saving mechanism and folter hierarchy**    
 The measurements are saved in a structured folder hierarchy, and are organized in this way:
 	- Pathological cases: `measurements/tilted/ISCH/height2_point4_ext/S35/S12_Ant3-Ant5_ISCH_point4_02.mat`
 
@@ -67,7 +69,7 @@ The measurements are saved in a structured folder hierarchy, and are organized i
 	
 	Of course this is only an example, the folders and the file names are generated automatically based on the parameters selected in the code. 
 
-5) 🔁 **Measurement loop**
+7) 🔁 **Measurement loop**   
 The code includes a for-loop that allows you to repeat the measurement of a single configuration multiple times, by doing that you can capture possible variations of S-parameters (like S12) over time.
 Note that increasing the number of repetitions will also increase the total duration of the measurement process.
 
