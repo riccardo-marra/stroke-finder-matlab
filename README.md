@@ -36,11 +36,13 @@ Each of these configurations is repeated for 2 phantom inclinations.
 Finally, there are 2 more configurations for the healthy case, one for each phantom inclination, where no stroke is present.
 
 
+Examples of two configurations
 
 | Stroke placed on application point number 1 (0°), internally, at height 1 | Stroke placed on application point number 3 (180°), externally, at height 2 |
 |------------------|------------------|
 | <img src="images/firstexample.jpg" alt="Phantom" width="400"/> | <img src="images/secondexample.jpg" alt="Phantom" width="400"/> |
 
+Top view showing the antenna configuration and application points numbering
 <div align="center">
 <img src="images/phantom_ant_config.png" alt="Phantom" width="300"/>
 </div>
