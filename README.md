@@ -8,7 +8,6 @@ Around the head phantom there's the helmet, composed of 8 antennas, which are co
 The chamber houses the head phantom and is used to minimize the external electromagnetic interferences, ensuring more accurate measurements.
 
 ![System schema](images/systemSchema.png)  
-![](images/systemSchema.png)  
 
 
 ## Experimental configurations
@@ -36,14 +35,15 @@ All these configurations lead to a total of:
 Each of these configurations is repeated for 2 phantom inclinations.
 Finally, there are 2 more configurations for the healthy case, one for each phantom inclination, where no stroke is present.
 
-Some images of the setup (to make things more clear):
-![Antennas positioning and application points](images/phantom_ant_config.png)  
-![](images/phantom_ant_config.png)  
-![Stroke placed on application point number 1 (0°), internally, at height 1](images/firstexample.jpg)  
-![](images/firstexample.jpg)  
-![Stroke placed on application point number 3 (180°), externally, at height 2](images/secondexample.jpg)  
-![](images/secondexample.jpg)  
 
+
+| Stroke placed on application point number 1 (0°), internally, at height 1 | Stroke placed on application point number 3 (180°), externally, at height 2 |
+|------------------|------------------|
+| <img src="images/firstexample.jpg" alt="Phantom" width="400"/> | <img src="images/secondexample.jpg" alt="Phantom" width="400"/> |
+
+<div align="center">
+<img src="images/phantom_ant_config.png" alt="Phantom" width="300"/>
+</div>
 
 
 ##  MATLAB Code Overview
